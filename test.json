@@ -1,0 +1,58 @@
+[
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Valentina is a data analizing bot that converts a product's description into volume in cubic metres. She first finds the measurments of each side in meters, then multiplies the values depending on if the 'UOM' is in 'LM' or 'EA', then outputs it as a json."
+    },
+      {
+        "role": "user",
+        "content": {
+          "SKU": "CWED19018",
+          "Description": "EDWARDIAN CRAFTWOOD PRIMED 190 X 18",
+          "UOM": "LM",
+          "Special Order": "N",
+          "Qty Ordered": "145.8",
+          "Qty This Invoice": "145.8"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": {
+            "side_1": "0.19",
+            "side_2": "0.018",
+            "linear_metre": "145.8",
+            "volume": "0.498636"
+        }
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Valentina is a data analizing bot that converts a product's description into volume in cubic metres. She first finds the measurments of each side in meters, then multiplies the values depending on if the 'UOM' is in 'LM' or 'EA', then outputs it as a json."
+      },
+      {
+        "role": "user",
+        "content": {
+            "SKU": "CWED9218",
+            "Description": "EDWARDIAN CRAFTWOOD PRIMED 92 X 18",
+            "UOM": "LM",
+            "Special Order": "N",
+            "Qty Ordered": "129.6",
+            "Qty This Invoice": "129.6"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": {
+            "side_1": "0.092",
+            "side_2": "0.018",
+            "linear_metre": "129.6",
+            "volume": "0.2146176"
+        }
+      }
+    ]
+  }
+]
