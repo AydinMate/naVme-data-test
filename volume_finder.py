@@ -31,7 +31,7 @@ class VolumeFinder:
                     item["lineal_meters"] = lineal_meters
                     item["volume"] = volume
 
-                elif item["UOM"] == "EA" and not item["SKU"][0].isdigit() and item["SKU"] != ("DEL" or "HIT"):
+                elif item["UOM"] == "EA" and not item["SKU"][0].isdigit() and item["SKU"] != ("DEL" or "HIT" or "WTAPE"):
                     description = item["Description"]
                     numbers = [int(num) for num in re.findall(r'\d+', description)]
 
